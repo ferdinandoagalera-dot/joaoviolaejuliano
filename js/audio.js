@@ -1,7 +1,6 @@
 (function () {
-  // Playlist de uploads do canal joaoviolaejuliano (UU + id do canal UCxpdwPrGBxVwOCVgJFd9-NQ).
-  // Cada vídeo toca SLICE_SECONDS segundos e avança para o próximo.
-  var PLAYLIST_ID = 'UUxpdwPrGBxVwOCVgJFd9-NQ';
+  // Playlist usada na RADIO VOZ CAIPIRA. Cada vídeo toca SLICE_SECONDS segundos e avança para o próximo.
+  var PLAYLIST_ID = 'PLy9SZ_XM4Hp_UxtlYsdkdBcR0FUwkh23E';
   var SLICE_SECONDS = 60;
   var HINT = 'Toque para ouvir com som';
 
