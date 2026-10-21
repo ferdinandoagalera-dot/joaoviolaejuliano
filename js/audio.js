@@ -1,7 +1,7 @@
 (function () {
-  // Playlist da RADIO VOZ CAIPIRA. Começa no item 3 (index 2, base 0). Cada vídeo toca SLICE_SECONDS segundos e avança.
-  var PLAYLIST_ID = 'PLy9SZ_XM4Hp-TtNzzTfBRat3oeWwpoDeL';
-  var START_INDEX = 2;
+  // Playlist da RADIO VOZ CAIPIRA. Começa no item 1 (index 0). Cada vídeo toca SLICE_SECONDS segundos e avança.
+  var PLAYLIST_ID = 'PLO-eaOlUP4_U';
+  var START_INDEX = 0;
   var SLICE_SECONDS = 60;
   var HINT = 'Toque para ouvir com som';
 
