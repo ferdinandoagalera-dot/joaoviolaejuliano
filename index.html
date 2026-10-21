@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1382518195683504" crossorigin="anonymous"></script>
   <title>João Viola e Juliano</title>
+  <meta name="description" content="João Viola e Juliano, dupla sertaneja raiz de pai e filho. Shows, contratações e vídeos.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -11,90 +13,124 @@
 </head>
 <body>
 
-  <nav class="navbar">
-    <a href="#inicio" class="logo"><img src="img/261VI3LEoRwFQapJtBxfF.png" alt="Logo João Viola e Juliano"></a>
-  </nav>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <header class="navbar">
+    <a href="#inicio" class="logo">
+      <img src="img/261VI3LEoRwFQapJtBxfF.png" alt="Logo João Viola e Juliano">
+      <span>JV&amp;J</span>
+    </a>
+    <button type="button" class="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="nav-links" aria-label="Seções">
+      <a href="#sobre">Sobre</a>
+      <a href="#shows">Shows</a>
+      <a href="#redes">Contato</a>
+      <a href="#videos">Vídeos</a>
+      <a href="#lembrancas">Galeria</a>
+      <a href="#agende">Agende</a>
+    </nav>
+  </header>
 
   <main>
 
     <!-- Hero -->
-    <section id="inicio" class="card card-hero">
-      <div class="hero-grid">
-        <div class="hero-text">
-          <h2 class="hero-title">João Viola e Juliano</h2>
-        </div>
-        <div class="hero-media">
+    <section id="inicio" class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Dupla sertaneja raiz</p>
+        <h1 class="hero-title glitch" data-text="João Viola e Juliano">João Viola e Juliano</h1>
+        <div class="equalizer" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <a href="#agende" class="btn">Agende seu show</a>
+      </div>
+      <div class="hero-media">
+        <div class="frame">
           <img src="img/joaoviolaejuliano.jpeg" alt="João Viola e Juliano">
         </div>
       </div>
     </section>
 
     <!-- Sobre a Dupla -->
-    <section id="sobre" class="card card-accent">
+    <section id="sobre" class="section">
       <div class="container">
-        <h1>Sobre a Dupla</h1>
+        <h2 class="section-title">Sobre a Dupla</h2>
         <div class="grid-3">
-          <div>
-            <h4>História</h4>
+          <article class="panel">
+            <span class="panel-index">01</span>
+            <h3>História</h3>
             <p>João Viola (76) e Juliano (54), pai e filho, um nascido em Buritama-SP, outro em MAUÁ-SP, estão no trecho a muitos anos.  O João Viola (pai) já está a +50 anos compositor e musico, leva a musica para todos os lugares, e está há 20 anos fazendo parceria com seu filho Juliano</p>
-          </div>
-          <div>
-            <h4>Influências</h4>
+          </article>
+          <article class="panel">
+            <span class="panel-index">02</span>
+            <h3>Influências</h3>
             <p>Tião Carreiro e Pardinho, Goiano e Paranaense, Liu e Leo, Divino e Donizete, Peão Carreiro e Praense, enfim, todos os grandes musicos sertanejos que deixaram seu nome na historia</p>
-          </div>
-          <div>
-            <h4>Estilo</h4>
+          </article>
+          <article class="panel">
+            <span class="panel-index">03</span>
+            <h3>Estilo</h3>
             <p>A viola tocada com maestria pelo João Viola e o violão pelo Juliano, é um show a parte que mostra o quanto gostam de manter a tradição e o estilo raiz em suas apresentações</p>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- Shows e Contratações -->
-    <section id="shows" class="card card-with-image">
-      <div class="card-image">
-        <img src="img/joaoviolajuliano2015.jpg" alt="João Viola e Juliano em show">
-      </div>
-      <div class="container">
-        <h2>Shows e Contratações</h2>
-        <div class="grid-3 numbered">
-          <div>
-            <span class="num">1</span>
-            <h4>Shows</h4>
-            <p>Presença marcante em eventos, com repertório diversificado que atinge o publico apreciador da verdadeira musica raiz</p>
-          </div>
-          <div>
-            <span class="num">2</span>
-            <h4>Produção Profissional</h4>
-            <p>Instrumentos musicais de primeira linha para apresentar o melhor para seu publico</p>
-          </div>
-          <div>
-            <span class="num">3</span>
-            <h4>Contatos</h4>
-            <p>Disponibilidade para shows em todo o Brasil. Entre em contato para agendar, no whatsapp <a href="https://wa.me/5518998206784">(18) 99820-6784</a></p>
-          </div>
+    <section id="shows" class="section split">
+      <div class="split-media">
+        <div class="frame">
+          <button type="button" class="zoom-trigger" data-open-photo aria-label="Ampliar foto de João Viola e Juliano">
+            <img src="img/joaoviolajuliano2015.jpg" alt="João Viola e Juliano em show">
+          </button>
         </div>
+      </div>
+      <div class="split-text">
+        <h2 class="section-title">Shows e Contratações</h2>
+        <ol class="steps">
+          <li>
+            <span class="num">1</span>
+            <div>
+              <h3>Shows</h3>
+              <p>Presença marcante em eventos, com repertório diversificado que atinge o publico apreciador da verdadeira musica raiz</p>
+            </div>
+          </li>
+          <li>
+            <span class="num">2</span>
+            <div>
+              <h3>Produção Profissional</h3>
+              <p>Instrumentos musicais de primeira linha para apresentar o melhor para seu publico</p>
+            </div>
+          </li>
+          <li>
+            <span class="num">3</span>
+            <div>
+              <h3>Contatos</h3>
+              <p>Disponibilidade para shows em todo o Brasil. Entre em contato para agendar, no whatsapp <a href="https://wa.me/5518998206784">(18) 99820-6784</a></p>
+            </div>
+          </li>
+        </ol>
       </div>
     </section>
 
     <!-- Redes Sociais -->
-    <section id="redes" class="card card-with-image card-behind">
-      <div class="card-image">
-        <img src="img/joaoviolaejulianobarretos.jpg" alt="João Viola e Juliano em Barretos">
+    <section id="redes" class="section split reverse">
+      <div class="split-media">
+        <div class="frame">
+          <img src="img/joaoviolaejulianobarretos.jpg" alt="João Viola e Juliano em Barretos">
+        </div>
       </div>
-      <div class="container">
-        <h1>Redes Sociais</h1>
-        <div class="grid-3 boxes">
-          <div class="box">
-            <h4>Email</h4>
-            <p><a href="mailto:joaoviolaejuliano@gmail.com">joaoviolaejuliano@gmail.com</a></p>
-          </div>
-          <div class="box">
-            <h4>WhatsApp</h4>
-            <p><a href="https://wa.me/5518998206784">(18) 99820-6784</a></p>
-          </div>
-          <div class="box">
-            <h4>Redes Sociais</h4>
+      <div class="split-text">
+        <h2 class="section-title">Redes Sociais</h2>
+        <div class="contact-cards">
+          <a class="card-link" href="mailto:joaoviolaejuliano@gmail.com">
+            <h3>Email</h3>
+            <p>joaoviolaejuliano@gmail.com</p>
+          </a>
+          <a class="card-link" href="https://wa.me/5518998206784">
+            <h3>WhatsApp</h3>
+            <p>(18) 99820-6784</p>
+          </a>
+          <div class="card-link">
+            <h3>Redes Sociais</h3>
             <p>
               <a href="https://www.facebook.com/joaoviolaejuliano">Facebook: joaoviolaejuliano</a><br>
               <a href="https://www.instagram.com/joaoviolaejuliano">Instagram: @joaoviolaejuliano</a>
@@ -105,46 +141,48 @@
     </section>
 
     <!-- Vídeos da Dupla -->
-    <section id="videos" class="card">
+    <section id="videos" class="section">
       <div class="container">
-        <h1>Vídeos da Dupla</h1>
+        <h2 class="section-title">Vídeos da Dupla</h2>
         <div class="grid-4">
-          <div class="video-cell">
+          <figure class="video-cell">
             <div class="video-frame ratio-16-9">
               <iframe src="https://www.youtube.com/embed/59FuzKYT9TY?rel=0" title="Rede Vida" allowfullscreen loading="lazy"></iframe>
             </div>
-            <h4>Rede Vida</h4>
+            <h3>Rede Vida</h3>
             <p>Direto de Barretos fizemos uma apresentação em programa da REDE VIDA</p>
-          </div>
-          <div class="video-cell">
+          </figure>
+          <figure class="video-cell">
             <div class="video-frame ratio-4-3">
               <iframe src="https://www.youtube.com/embed/6v9vyt-fXIA?rel=0" title="Brasil Caipira" allowfullscreen loading="lazy"></iframe>
             </div>
-            <h4>Brasil Caipira</h4>
+            <h3>Brasil Caipira</h3>
             <p>Participação no programa de TV BRASIL CAIPIRA do amigo Luiz Rocha</p>
-          </div>
-          <div class="video-cell">
+          </figure>
+          <figure class="video-cell">
             <div class="video-frame ratio-16-9">
               <iframe src="https://www.youtube.com/embed/iA-3trS7iaI?rel=0" title="Dez Horas Viola" allowfullscreen loading="lazy"></iframe>
             </div>
-            <h4>Dez Horas Viola</h4>
+            <h3>Dez Horas Viola</h3>
             <p>Apresentação em PIACATU-SP - 2024</p>
-          </div>
-          <div class="video-cell">
+          </figure>
+          <figure class="video-cell">
             <div class="video-frame ratio-16-9">
               <iframe src="https://www.youtube.com/embed/oALfSwRrxGY?rel=0" title="Encontros" allowfullscreen loading="lazy"></iframe>
             </div>
-            <p class="center">"Encontros"<br>FATIMA BERNADES</p>
-            <p class="center">TV GLOBO</p>
-          </div>
+            <figcaption>
+              <p class="center">"Encontros"<br>FATIMA BERNADES</p>
+              <p class="center">TV GLOBO</p>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
     <!-- Lembranças -->
-    <section id="lembrancas" class="card">
+    <section id="lembrancas" class="section">
       <div class="container">
-        <h3>Lembranças</h3>
+        <h2 class="section-title">Lembranças</h2>
         <div class="gallery" id="gallery">
           <img src="img/11214348_428783447312695_3741809748263270078_n.jpg" alt="Lembrança 1" loading="lazy">
           <img src="img/11887933_422668794590827_2064249095194369287_n.jpg" alt="Lembrança 2" loading="lazy">
@@ -157,30 +195,30 @@
           <img src="img/foto1.jpg" alt="Lembrança 9" loading="lazy">
           <img src="img/12931180_491665737691132_7781823316784889338_n.jpg" alt="Lembrança 10" loading="lazy">
         </div>
-        <button type="button" class="expand-btn" id="expand-btn" aria-expanded="false">Expand</button>
+        <button type="button" class="btn btn-ghost" id="expand-btn" aria-expanded="false">Expand</button>
       </div>
     </section>
 
     <!-- Agende seu Show -->
-    <section id="agende" class="card">
-      <div class="container">
-        <h1>Agende seu Show</h1>
+    <section id="agende" class="section">
+      <div class="container narrow">
+        <h2 class="section-title">Agende seu Show</h2>
         <details class="toggle">
           <summary>Informações para Contratação</summary>
           <p class="lead">Para contratar o show da dupla para seu EVENTO, é muito fácil,<br>acesse nosso WHATSAPP  - <strong><a href="https://wa.me/5518998206784">(18) 99820-6784</a></strong> e nos informe :</p>
-          <ul>
+          <ul class="checklist">
             <li>Data e horário do evento</li>
             <li>Local do evento</li>
             <li>Público estimado</li>
             <li>Tipo de evento</li>
           </ul>
         </details>
-        <div class="video-single">
+        <figure class="video-single">
           <div class="video-frame ratio-4-3">
             <iframe src="https://www.youtube.com/embed/pkWMs_LpESc?rel=0" title="Programa Olhares da BAND SC - 04-01-2015" allowfullscreen loading="lazy"></iframe>
           </div>
-          <p class="center">Programa Olhares da BAND SC - 04-01-2015</p>
-        </div>
+          <figcaption class="center">Programa Olhares da BAND SC - 04-01-2015</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -190,15 +228,25 @@
     <p>© 2024 João Viola e Juliano. Todos os direitos reservados.</p>
   </footer>
 
-  <script>
-    (function () {
-      var btn = document.getElementById('expand-btn');
-      var gallery = document.getElementById('gallery');
-      btn.addEventListener('click', function () {
-        var open = gallery.classList.toggle('is-expanded');
-        btn.setAttribute('aria-expanded', String(open));
-      });
-    })();
-  </script>
+  <dialog id="photo-dialog" class="lightbox" aria-label="Foto ampliada">
+    <button type="button" class="lightbox-close" aria-label="Fechar foto">&times;</button>
+    <img src="img/joaoviolajuliano2015.jpg" alt="João Viola e Juliano em show">
+  </dialog>
+
+  <div class="audio-bar" id="audio-bar" role="region" aria-label="Player de áudio da dupla">
+    <button type="button" class="audio-btn" id="audio-prev" aria-label="Faixa anterior">&#8249;</button>
+    <button type="button" class="audio-btn audio-play" id="audio-play" aria-label="Tocar">&#9654;</button>
+    <button type="button" class="audio-btn" id="audio-next" aria-label="Próxima faixa">&#8250;</button>
+    <div class="audio-info">
+      <span class="audio-status" id="audio-status">Carregando player…</span>
+      <span class="audio-track" id="audio-track"></span>
+    </div>
+    <button type="button" class="audio-btn" id="audio-sound" aria-label="Ativar som">&#128266;</button>
+  </div>
+  <div id="yt-audio" aria-hidden="true"></div>
+
+  <script src="js/background.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/audio.js"></script>
 </body>
 </html>
